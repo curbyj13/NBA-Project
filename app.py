@@ -23,13 +23,15 @@ class NBAGameData:
         url = f'{self.BASE_URL}{endpoint}'
         params = {'api_key': self.API_KEY}
         try:
-            response = requests.get(url, params=params)
+            response = requests.get(url, params=params, timeout=10)
             response.raise_for_status()
             return response.json()
+        except requests.exceptions.Timeout:
+            logging.error(f'Request timeout for {url}')
+            return None
         except requests.exceptions.RequestException as e:
             logging.error(f'Error making API request to {url}: {e}')
             return None
-
     def get_league_leaders(self, year, season_type='REG'):
         endpoint = f'/seasons/{year}/{season_type}/leaders.json'
         return self._make_request(endpoint)
@@ -90,3 +92,7 @@ def player_stats(player_id):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+def get_player_stats(self, player_id):
+    endpoint = f'/players/{player_id}/profile.json'
+    return self._make_request(endpoint)

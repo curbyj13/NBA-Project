@@ -1,4 +1,5 @@
 {
-    "status": "success",
-    "message": "Data fetched and saved successfully.",
-    "file_saved": 
+    "status": "failure",
+    "message": "Failed to fetch data",
+    "timestamp": "2024-12-08T18:12:19.092018"
+}

@@ -7,46 +7,52 @@ def load_data(file_path):
             data = json.load(file)
         return data
     except json.JSONDecodeError as e:
-        print(f"Error loading JSON data: {e}")
+        print("Error loading JSON data: {}".format(e))
         return None
     except FileNotFoundError:
-        print(f"File not found: {file_path}")
+        print("File not found: {}".format(file_path))
         return None
 
 def process_data(data):
     try:
-        df = pd.json_normalize(data)
+        # Separate processing for different data types
+        schedule_df = pd.json_normalize(data['schedule'])
+        standings_df = pd.json_normalize(data['standings'])
+        results_df = pd.json_normalize(data['results'])
+        
         # Add data validation
-        if df.empty:
-            print("Warning: DataFrame is empty after processing")
-            return None
-        return df
+        for df in [schedule_df, standings_df, results_df]:
+            if df.empty:
+                print("Warning: One or more DataFrames are empty")
+                return None
+        
+        return {
+            'schedule': schedule_df,
+            'standings': standings_df,
+            'results': results_df
+        }
     except Exception as e:
-        print(f"Error processing data: {e}")
+        print("Error processing data: {}".format(e))
         return None
 
-def save_data(df, file_path):
+def save_data(dfs, base_path):
     try:
-        df.to_csv(file_path, index=False)
-        print(f"Cleaned data saved as: {file_path}")
+        for name, df in dfs.items():
+            output_path = "{}/{}_data.csv".format(base_path, name)
+            df.to_csv(output_path, index=False)
+            print("Saved {} data to: {}".format(name, output_path))
     except Exception as e:
-        print(f"Error saving data: {e}")
+        print("Error saving data: {}".format(e))
 
 def main():
-    # Use absolute or relative path consistently
     data_file_path = "data/api_data.json"
-    output_file_path = "data/processed_data.csv"
+    output_base_path = "data"
     
-    # Load data
     data = load_data(data_file_path)
-    
     if data is not None:
-        # Process data
-        df_cleaned = process_data(data)
-        
-        if df_cleaned is not None:
-            # Save processed data
-            save_data(df_cleaned, output_file_path)
+        dfs = process_data(data)
+        if dfs is not None:
+            save_data(dfs, output_base_path)
     else:
         print("Data loading failed. Please check the input file.")
 

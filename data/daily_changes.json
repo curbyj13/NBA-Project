@@ -1,0 +1,188 @@
+{
+    "league": {
+        "id": "4353138d-4c22-4396-95d8-5f587d2df25c",
+        "name": "NBA",
+        "alias": "NBA"
+    },
+    "start_time": "2024-08-01T04:00:00Z",
+    "end_time": "2024-08-02T03:59:59Z",
+    "players": [
+        {
+            "id": "1681339e-29da-4cac-bf9c-770108073440",
+            "full_name": "Timmy Allen",
+            "last_modified": "2024-08-01T17:38:30Z",
+            "sr_id": "sr:player:1588396",
+            "reference": "1641851"
+        },
+        {
+            "id": "1d1fa699-a455-4082-9df8-f97dbb0ca678",
+            "full_name": "Jay Huff",
+            "last_modified": "2024-08-01T16:40:51Z",
+            "sr_id": "sr:player:1161010",
+            "reference": "1630643"
+        },
+        {
+            "id": "23e33381-1d9d-4415-b3bc-3e3d747aa103",
+            "full_name": "Melvin Ajinca",
+            "last_modified": "2024-08-01T16:07:01Z",
+            "sr_id": "sr:player:2685285"
+        },
+        {
+            "id": "24c17409-ac10-4859-be6c-59d6cc6b5810",
+            "full_name": "Boban Marjanovic",
+            "last_modified": "2024-08-01T16:38:42Z",
+            "sr_id": "sr:player:860122",
+            "reference": "1626246"
+        },
+        {
+            "id": "2ff9979f-4ca6-44b8-946e-70cbd992410c",
+            "full_name": "David Duke Jr.",
+            "last_modified": "2024-08-01T17:21:46Z",
+            "sr_id": "sr:player:1593908",
+            "reference": "1630561"
+        },
+        {
+            "id": "4ea56b9e-562d-4f19-a0e1-ea0e1da19688",
+            "full_name": "Zach Edey",
+            "last_modified": "2024-08-01T16:43:41Z",
+            "sr_id": "sr:player:2077149"
+        },
+        {
+            "id": "54a7404f-3173-4d3e-93ca-6571a183b9a6",
+            "full_name": "Jack White",
+            "last_modified": "2024-08-01T16:46:42Z",
+            "sr_id": "sr:player:1167832",
+            "reference": "1631298"
+        },
+        {
+            "id": "58c01127-e0de-487d-a2bc-bf88642619c0",
+            "full_name": "Alondes Williams",
+            "last_modified": "2024-08-01T15:38:40Z",
+            "sr_id": "sr:player:1943586",
+            "reference": "1631214"
+        },
+        {
+            "id": "5efce548-15a0-4a8c-9f63-5f5db4851696",
+            "full_name": "Riley Minix",
+            "last_modified": "2024-08-01T17:30:25Z",
+            "sr_id": "sr:player:2701088"
+        },
+        {
+            "id": "6b2a569f-b0ae-4bdf-b7c8-eef466421d9a",
+            "full_name": "RaiQuan Gray",
+            "last_modified": "2024-08-01T17:18:13Z",
+            "sr_id": "sr:player:2195770",
+            "reference": "1630564"
+        },
+        {
+            "id": "7aa10d1a-ed4e-417d-998d-84ce66c77c9b",
+            "full_name": "Anthony Gill",
+            "last_modified": "2024-08-01T15:52:52Z",
+            "sr_id": "sr:player:1611382",
+            "reference": "1630264"
+        },
+        {
+            "id": "8426ab40-888d-4f89-976c-cd9e23717653",
+            "full_name": "Spencer Dinwiddie",
+            "last_modified": "2024-08-01T16:01:55Z",
+            "sr_id": "sr:player:607360",
+            "reference": "203915"
+        },
+        {
+            "id": "852e34ff-2735-4d9a-895c-cb45978ae13a",
+            "full_name": "Izaiah Brockington",
+            "last_modified": "2024-08-01T17:00:48Z",
+            "sr_id": "sr:player:1318502",
+            "reference": "1631167"
+        },
+        {
+            "id": "98fa75e7-a46f-4483-a15b-053c5ca52604",
+            "full_name": "Tristan Da Silva",
+            "last_modified": "2024-08-01T15:49:35Z",
+            "sr_id": "sr:player:2081063"
+        },
+        {
+            "id": "9e917c97-5227-4581-9ab5-2dd07a7187ef",
+            "full_name": "Patty Mills",
+            "last_modified": "2024-08-01T15:34:13Z",
+            "sr_id": "sr:player:607934",
+            "reference": "201988"
+        },
+        {
+            "id": "a1ddebee-950c-497d-9acd-b5061360b464",
+            "full_name": "Gordon Hayward",
+            "last_modified": "2024-08-01T15:20:44Z",
+            "sr_id": "sr:player:607858",
+            "reference": "202330"
+        },
+        {
+            "id": "a537047d-c29f-4dfe-99b0-3bac4e258dc7",
+            "full_name": "Luke Kennard",
+            "last_modified": "2024-08-01T16:42:45Z",
+            "sr_id": "sr:player:1126375",
+            "reference": "1628379"
+        },
+        {
+            "id": "a9aaa4a2-9997-49b3-b54e-bcf5ec66efe5",
+            "full_name": "Leaky Black",
+            "last_modified": "2024-08-01T23:40:06Z",
+            "sr_id": "sr:player:1582802",
+            "reference": "1641778"
+        },
+        {
+            "id": "aae3125e-9077-42d8-b714-601bbc1eeae4",
+            "full_name": "Anzejs Pasecniks",
+            "last_modified": "2024-08-01T20:14:47Z",
+            "sr_id": "sr:player:852124",
+            "reference": "1628394"
+        },
+        {
+            "id": "c2ad9bcf-7920-46ce-a124-dc21e98ca72d",
+            "full_name": "Kessler Edwards",
+            "last_modified": "2024-08-01T16:02:13Z",
+            "sr_id": "sr:player:1586640",
+            "reference": "1630556"
+        },
+        {
+            "id": "c910f29a-3f6b-4dba-92e9-20137fbdf2c7",
+            "full_name": "Sandro Mamukelashvili",
+            "last_modified": "2024-08-01T17:28:45Z",
+            "sr_id": "sr:player:1317896",
+            "reference": "1630572"
+        },
+        {
+            "id": "cae1e67f-229e-46c8-851a-571d728ae315",
+            "full_name": "Cole Swider",
+            "last_modified": "2024-08-01T15:39:47Z",
+            "sr_id": "sr:player:1593930",
+            "reference": "1631306"
+        },
+        {
+            "id": "da899e36-f338-495b-b6f0-121295baf354",
+            "full_name": "Trey Jemison",
+            "last_modified": "2024-08-01T17:05:26Z",
+            "sr_id": "sr:player:1582618",
+            "reference": "1641998"
+        },
+        {
+            "id": "e18e9d0a-97b9-470d-b0a6-0c401ae0e0a0",
+            "full_name": "Daniel Theis",
+            "last_modified": "2024-08-01T16:55:57Z",
+            "sr_id": "sr:player:921118",
+            "reference": "1628464"
+        },
+        {
+            "id": "f4800b3d-a795-4b22-bfef-83a079b30a89",
+            "full_name": "Chuma Okeke",
+            "last_modified": "2024-08-01T23:32:35Z",
+            "sr_id": "sr:player:1296162",
+            "reference": "1629643"
+        },
+        {
+            "id": "fe4c4f99-5dfb-4e32-b69a-da8c5a779c27",
+            "full_name": "Alex Sarr",
+            "last_modified": "2024-08-01T15:56:33Z",
+            "sr_id": "sr:player:2683073"
+        }
+    ]
+}

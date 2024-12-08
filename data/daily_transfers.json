@@ -1,0 +1,213 @@
+{
+    "league": {
+        "id": "4353138d-4c22-4396-95d8-5f587d2df25c",
+        "name": "NBA",
+        "alias": "NBA"
+    },
+    "start_time": "2024-08-01T04:00:00Z",
+    "end_time": "2024-08-02T03:59:59Z",
+    "players": [
+        {
+            "id": "1681339e-29da-4cac-bf9c-770108073440",
+            "full_name": "Timmy Allen",
+            "first_name": "Timmy",
+            "last_name": "Allen",
+            "position": "F",
+            "primary_position": "SF",
+            "sr_id": "sr:player:1588396",
+            "reference": "1641851",
+            "transfers": [
+                {
+                    "id": "1928e16e-3674-4f78-9e1b-1a76a647fef2",
+                    "desc": "The Memphis Grizzlies signed F Timmy Allen to a 10-day contract.",
+                    "effective_date": "2024-04-07",
+                    "last_modified": "2024-08-01T17:35:56Z",
+                    "transaction_type": "Signed to 10-Day Contract",
+                    "transaction_code": "10D",
+                    "to_team": {
+                        "id": "583eca88-fb46-11e1-82cb-f4ce4684ea4c",
+                        "name": "Grizzlies",
+                        "market": "Memphis",
+                        "reference": "1610612763"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "aae3125e-9077-42d8-b714-601bbc1eeae4",
+            "full_name": "Anzejs Pasecniks",
+            "first_name": "Anzejs",
+            "last_name": "Pasecniks",
+            "position": "C-F",
+            "primary_position": "C",
+            "sr_id": "sr:player:852124",
+            "reference": "1628394",
+            "transfers": [
+                {
+                    "id": "335cc5a6-5b5a-4c3f-b27f-850b863ed10d",
+                    "desc": "The Milwaukee Bucks signed C-F Anzejs Pasecniks to a two-way contract.",
+                    "effective_date": "2024-08-01",
+                    "last_modified": "2024-08-01T20:15:34Z",
+                    "transaction_type": "Signed",
+                    "transaction_code": "SGN",
+                    "to_team": {
+                        "id": "583ecefd-fb46-11e1-82cb-f4ce4684ea4c",
+                        "name": "Bucks",
+                        "market": "Milwaukee",
+                        "reference": "1610612749"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "a1ddebee-950c-497d-9acd-b5061360b464",
+            "full_name": "Gordon Hayward",
+            "first_name": "Gordon",
+            "last_name": "Hayward",
+            "position": "F",
+            "primary_position": "SF",
+            "sr_id": "sr:player:607858",
+            "reference": "202330",
+            "transfers": [
+                {
+                    "id": "5b8275b1-0504-4823-b4a4-4372e47af151",
+                    "desc": "F Gordon Hayward retired from NBA.",
+                    "effective_date": "2024-08-01",
+                    "last_modified": "2024-08-01T15:21:13Z",
+                    "transaction_type": "Retired",
+                    "transaction_code": "RET"
+                }
+            ]
+        },
+        {
+            "id": "54a7404f-3173-4d3e-93ca-6571a183b9a6",
+            "full_name": "Jack White",
+            "first_name": "Jack",
+            "last_name": "White",
+            "position": "F",
+            "primary_position": "SF",
+            "sr_id": "sr:player:1167832",
+            "reference": "1631298",
+            "transfers": [
+                {
+                    "id": "76167fa3-501c-4d84-8fcd-f05b430db182",
+                    "desc": "The Memphis Grizzlies did not renew F Jack White's contract.",
+                    "effective_date": "2024-05-14",
+                    "last_modified": "2024-08-01T16:47:42Z",
+                    "transaction_type": "Contract Expired",
+                    "transaction_code": "CEXP",
+                    "from_team": {
+                        "id": "583eca88-fb46-11e1-82cb-f4ce4684ea4c",
+                        "name": "Grizzlies",
+                        "market": "Memphis",
+                        "reference": "1610612763"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "9e917c97-5227-4581-9ab5-2dd07a7187ef",
+            "full_name": "Patty Mills",
+            "first_name": "Patty",
+            "last_name": "Mills",
+            "position": "G",
+            "primary_position": "PG",
+            "sr_id": "sr:player:607934",
+            "reference": "201988",
+            "transfers": [
+                {
+                    "id": "8e43479d-8bb7-4de9-9593-9a8d4b6ed2d1",
+                    "desc": "G Patty Mills elected free agency.",
+                    "effective_date": "2024-06-30",
+                    "last_modified": "2024-08-01T15:34:33Z",
+                    "transaction_type": "Declared Free Agency",
+                    "transaction_code": "FA",
+                    "from_team": {
+                        "id": "583ecea6-fb46-11e1-82cb-f4ce4684ea4c",
+                        "name": "Heat",
+                        "market": "Miami",
+                        "reference": "1610612748"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "a9aaa4a2-9997-49b3-b54e-bcf5ec66efe5",
+            "full_name": "Leaky Black",
+            "first_name": "Leaky",
+            "last_name": "Black",
+            "position": "F",
+            "primary_position": "SF",
+            "sr_id": "sr:player:1582802",
+            "reference": "1641778",
+            "transfers": [
+                {
+                    "id": "9e581370-6679-42e0-a8ca-f47f817c3ed0",
+                    "desc": "The Charlotte Hornets waived F Leaky Black.",
+                    "effective_date": "2024-08-01",
+                    "last_modified": "2024-08-01T23:40:39Z",
+                    "transaction_type": "Waived",
+                    "transaction_code": "WA",
+                    "from_team": {
+                        "id": "583ec97e-fb46-11e1-82cb-f4ce4684ea4c",
+                        "name": "Hornets",
+                        "market": "Charlotte",
+                        "reference": "1610612766"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "852e34ff-2735-4d9a-895c-cb45978ae13a",
+            "full_name": "Izaiah Brockington",
+            "first_name": "Izaiah",
+            "last_name": "Brockington",
+            "position": "G",
+            "primary_position": "PG",
+            "sr_id": "sr:player:1318502",
+            "reference": "1631167",
+            "transfers": [
+                {
+                    "id": "d7858a84-e8d7-4980-9889-7f6c042df05c",
+                    "desc": "The New Orleans Pelicans did not extend G Izaiah Brockington's contract.",
+                    "effective_date": "2024-03-13",
+                    "last_modified": "2024-08-01T17:02:19Z",
+                    "transaction_type": "Contract Expired",
+                    "transaction_code": "CEXP",
+                    "from_team": {
+                        "id": "583ecc9a-fb46-11e1-82cb-f4ce4684ea4c",
+                        "name": "Pelicans",
+                        "market": "New Orleans",
+                        "reference": "1610612740"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "24c17409-ac10-4859-be6c-59d6cc6b5810",
+            "full_name": "Boban Marjanovic",
+            "first_name": "Boban",
+            "last_name": "Marjanovic",
+            "position": "C",
+            "primary_position": "C",
+            "sr_id": "sr:player:860122",
+            "reference": "1626246",
+            "transfers": [
+                {
+                    "id": "fd7b8675-1b72-4afd-b1fe-64da1ad64291",
+                    "desc": "C Boban Marjanovic elected free agency.",
+                    "effective_date": "2024-06-30",
+                    "last_modified": "2024-08-01T16:39:01Z",
+                    "transaction_type": "Declared Free Agency",
+                    "transaction_code": "FA",
+                    "from_team": {
+                        "id": "583ecb3a-fb46-11e1-82cb-f4ce4684ea4c",
+                        "name": "Rockets",
+                        "market": "Houston",
+                        "reference": "1610612745"
+                    }
+                }
+            ]
+        }
+    ]
+}
