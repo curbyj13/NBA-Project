@@ -1,0 +1,48 @@
+/* Interactive Elements Hover States */
+.filter-group select:hover,
+.comparison-selectors select:hover {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+}
+
+.chart-toggles button:hover {
+    background: #2980b9;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Hover Effects */
+.comparison-container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Stats Display Hover */
+.stat-row:hover {
+    background: rgba(52, 152, 219, 0.1);
+    transition: background 0.3s ease;
+}
+
+/* Chart Hover Interactions */
+.charts-container canvas:hover {
+    cursor: pointer;
+    filter: brightness(1.02);
+}
+
+/* Dark Mode Hover States */
+@media (prefers-color-scheme: dark) {
+    .filter-group select:hover,
+    .comparison-selectors select:hover {
+        border-color: #2171b5;
+        box-shadow: 0 0 8px rgba(33, 113, 181, 0.3);
+    }
+
+    .chart-toggles button:hover {
+        background: #1a5a8e;
+    }
+
+    .stat-row:hover {
+        background: rgba(33, 113, 181, 0.2);
+    }
+}

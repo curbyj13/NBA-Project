@@ -1,0 +1,58 @@
+/* Large Screens (1200px and up) */
+@media screen and (min-width: 1200px) {
+    .charts-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .comparison-selectors {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Medium Screens (768px to 1199px) */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .charts-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .filter-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small Screens (576px to 767px) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .charts-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .comparison-selectors {
+        grid-template-columns: 1fr;
+    }
+    
+    .chart-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+/* Extra Small Screens (575px and down) */
+@media screen and (max-width: 575px) {
+    body {
+        padding: 10px;
+    }
+    
+    .filter-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .chart-toggles {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    select, button {
+        width: 100%;
+    }
+}

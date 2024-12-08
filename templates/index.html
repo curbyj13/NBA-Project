@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Player Stats</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Add this after your h1 -->
+    <div style="display:none;" id="debug-data">
+        {{ data|tojson|safe }}
+    </div>
+
+    <!-- Update your hidden input -->
+    <input type="hidden" id="players-data" value="{{ data.players|tojson|safe }}">
+    <head>
+    <!-- Add this line -->
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <header>
+        <h1>NBA Player Stats</h1>
+    </header>
+
+    <main>
+        <!-- Filters Section -->
+        <section class="filter-container">
+            <!-- Team Dropdown -->
+            <div class="filter-group">
+                <label for="team-filter">Team:</label>
+                <select id="team-filter">
+                    <option value="">Select Team</option>
+                    {% for team in data.teams %}
+                        <option value="{{ team }}">{{ team }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <!-- Position Dropdown -->
+            <div class="filter-group">
+                <label for="position-filter">Position:</label>
+                <select id="position-filter" disabled>
+                    <option value="">Select Position</option>
+                    <option value="PG">Point Guard (PG)</option>
+                    <option value="SG">Shooting Guard (SG)</option>
+                    <option value="SF">Small Forward (SF)</option>
+                    <option value="PF">Power Forward (PF)</option>
+                    <option value="C">Center (C)</option>
+                </select>
+            </div>
+            <!-- Player Dropdown -->
+            <div class="filter-group">
+                <label for="player-filter">Player:</label>
+                <select id="player-filter" disabled>
+                    <option value="">Select Player</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Comparison Section -->
+        <section class="comparison-container">
+            <h2>Player Comparison</h2>
+<!-- Player Selection -->
+<div class="player-selection">
+    <div class="player-select">
+        <label for="player1-select">Player 1</label>
+        <select id="player1-select" required>
+            <option value="">Select Player</option>
+        </select>
+    </div>
+    <div class="player-select">
+        <label for="player2-select">Player 2</label>
+        <select id="player2-select" required>
+            <option value="">Select Player</option>
+        </select>
+    </div>
+</div>
+            <!-- Charts Section -->
+            <div class="charts-section">
+                <div class="loading-overlay">
+                    <div class="spinner"></div>
+                    <p>Loading comparison data...</p>
+                </div>
+
+                <div class="error-display" style="display: none;"></div>
+
+                <div class="chart-controls">
+                    <select id="comparison-type">
+                        <option value="player-player">Player vs Player</option>
+                        <option value="player-team">Player vs Team</option>
+                    </select>
+                    <div class="chart-toggles">
+                        <button id="radar-chart-toggle" class="active">Radar</button>
+                        <button id="bar-chart-toggle" class="active">Bar</button>
+                        <button id="efficiency-chart-toggle" class="active">Efficiency</button>
+                    </div>
+                </div>
+
+                <div class="charts-container">
+                    <canvas id="radarChart"></canvas>
+                    <canvas id="barChart"></canvas>
+                    <canvas id="efficiencyChart"></canvas>
+                </div>
+            </div>
+
+            <div class="comparison-stats">
+                <!-- Stats grid will be populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/comparison.js') }}"></script>
+</body>
+</html>

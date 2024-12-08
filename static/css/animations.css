@@ -1,0 +1,63 @@
+/* Core Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Applied Animations */
+.comparison-container {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.charts-container canvas {
+    animation: slideIn 0.6s ease-out;
+}
+
+.chart-toggles button {
+    transition: all 0.3s ease;
+}
+
+.chart-toggles button:hover {
+    transform: translateY(-2px);
+}
+
+.chart-toggles button.active {
+    animation: pulse 0.3s ease-out;
+}
+
+/* Loading Animation */
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Selection Animations */
+select:focus {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+}
+
+/* Chart Transition Effects */
+.charts-container {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Error Display Animation */
+.error-display {
+    animation: slideIn 0.3s ease-out;
+}

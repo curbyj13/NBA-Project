@@ -1,0 +1,51 @@
+/* Print Styles */
+@media print {
+    /* Page Setup */
+    @page {
+        margin: 2cm;
+    }
+
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    /* Hide Interactive Elements */
+    .filter-container,
+    .chart-controls,
+    .loading-overlay,
+    .error-display {
+        display: none;
+    }
+
+    /* Optimize Charts for Printing */
+    .charts-container {
+        grid-template-columns: 1fr;
+        page-break-inside: avoid;
+    }
+
+    canvas {
+        max-width: 100%;
+        height: auto !important;
+    }
+
+    /* Stats Display */
+    .comparison-stats {
+        break-inside: avoid;
+        margin-top: 20px;
+    }
+
+    /* Typography */
+    h1, h2 {
+        color: black;
+        text-align: left;
+    }
+
+    /* QR Code for Digital Version */
+    .comparison-container::after {
+        content: "View interactive version: [QR Code]";
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+    }
+}

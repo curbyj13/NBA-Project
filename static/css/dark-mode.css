@@ -1,0 +1,49 @@
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #f0f0f0;
+    }
+
+    .comparison-container,
+    .filter-container {
+        background: #2d2d2d;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    select, button {
+        background: #3d3d3d;
+        color: #f0f0f0;
+        border-color: #4d4d4d;
+    }
+
+    button:hover {
+        background: #4d4d4d;
+    }
+
+    button.active {
+        background: #2171b5;
+        border-color: #1a5a8e;
+    }
+
+    .error-display {
+        background: #442222;
+        color: #ff9999;
+        border-color: #663333;
+    }
+
+    /* Chart Customization for Dark Mode */
+    .charts-container canvas {
+        background: #2d2d2d;
+    }
+
+    /* Loading Overlay */
+    .loading-overlay {
+        background: rgba(45, 45, 45, 0.9);
+    }
+
+    .spinner {
+        border-color: #4d4d4d;
+        border-top-color: #2171b5;
+    }
+}
